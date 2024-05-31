@@ -1,0 +1,10 @@
+cat > domAnimals
+cat > packAnimals
+cat domAnimals packAnimals > animals
+mkdir test
+cat animals > ./test/animals
+cd ~/Downloads
+sudo dpkg -i mysql-apt-config_0.8.30-1_all.deb
+sudo apt-get install mysql-server
+sudo apt remove mysql-server
+sudo apt autoremove
